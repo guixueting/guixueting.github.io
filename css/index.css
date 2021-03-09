@@ -1437,13 +1437,6 @@ a {
 a:hover {
   color: #49b1f5;
 }
-#site-title,
-#site-subtitle,
-#site-name,
-#aside_content .author-info__name,
-#aside_content .author-info__description {
-  font-family: 桂学婷的Blog;
-}
 .is-center {
   text-align: center;
 }
