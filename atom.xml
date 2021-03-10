@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>guixueting</title>
   
-  <subtitle>Gui Xue Ting</subtitle>
+  <subtitle>GuiXueTing</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
@@ -10,7 +10,7 @@
   <id>http://example.com/</id>
   
   <author>
-    <name>桂学婷</name>
+    <name>John Doe</name>
     
   </author>
   
