@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-30T12:09:32.908Z</updated>
+  <updated>2021-03-11T10:58:12.518Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简述Js中的原型与原型链</title>
+    <link href="http://example.com/2021/03/11/%E7%AE%80%E8%BF%B0Js%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
+    <id>http://example.com/2021/03/11/%E7%AE%80%E8%BF%B0Js%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
+    <published>2021-03-11T10:58:12.000Z</published>
+    <updated>2021-03-11T10:58:12.518Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
