@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-11T11:20:04.342Z</updated>
+  <updated>2021-03-11T11:24:41.145Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm的初步见解</title>
+    <link href="http://example.com/2021/03/11/npm%E7%9A%84%E5%88%9D%E6%AD%A5%E8%A7%81%E8%A7%A3/"/>
+    <id>http://example.com/2021/03/11/npm%E7%9A%84%E5%88%9D%E6%AD%A5%E8%A7%81%E8%A7%A3/</id>
+    <published>2021-03-11T11:24:41.000Z</published>
+    <updated>2021-03-11T11:24:41.145Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>JS 中的闭包与模块</title>
