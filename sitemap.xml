@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/03/11/%E5%85%B3%E4%BA%8E%E6%B5%AE%E5%8A%A8%E7%9A%84%E8%8B%A5%E5%B9%B2%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2021-03-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/01/07/AJAX/</loc>
+    
+    <lastmod>2021-03-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/05/Uniapp%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+    
+    <lastmod>2021-03-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/15/%E6%B5%85%E8%B0%88TypeScript/</loc>
+    
+    <lastmod>2021-03-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/04/01/js%E4%B8%89%E5%A4%A7%E5%AE%B6%E6%97%8F/</loc>
     
     <lastmod>2021-03-11</lastmod>
