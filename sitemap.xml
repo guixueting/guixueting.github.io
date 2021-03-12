@@ -214,7 +214,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-03-11</lastmod>
+    <lastmod>2021-03-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -222,7 +222,7 @@
   
   <url>
     <loc>http://example.com/tags/React/</loc>
-    <lastmod>2021-03-11</lastmod>
+    <lastmod>2021-03-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
