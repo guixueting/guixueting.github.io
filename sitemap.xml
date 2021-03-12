@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2020/03/11/%E7%AE%80%E8%BF%B0Js%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
+    
+    <lastmod>2021-03-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/03/11/cookie-session/</loc>
     
     <lastmod>2021-03-11</lastmod>
@@ -17,13 +24,6 @@
   
   <url>
     <loc>http://example.com/2021/03/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-    
-    <lastmod>2021-03-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/03/11/%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</loc>
     
     <lastmod>2021-03-11</lastmod>
     
@@ -192,13 +192,6 @@
   
   <url>
     <loc>http://example.com/2020/10/30/hello-world/</loc>
-    
-    <lastmod>2021-03-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/03/11/%E7%AE%80%E8%BF%B0Js%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
     
     <lastmod>2021-03-11</lastmod>
     
