@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/01/12/Reack-Hook/</loc>
+    
+    <lastmod>2021-03-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2020/06/25/cookie-session/</loc>
     
     <lastmod>2021-03-13</lastmod>
@@ -31,13 +38,6 @@
   
   <url>
     <loc>http://example.com/2021/02/17/react-hook%E5%AE%9E%E7%8E%B0redux%E7%9A%84%E5%8A%9F%E8%83%BD/</loc>
-    
-    <lastmod>2021-03-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/01/12/Reack-Hook/</loc>
     
     <lastmod>2021-03-13</lastmod>
     
