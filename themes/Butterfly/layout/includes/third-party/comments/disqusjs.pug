@@ -1,0 +1,57 @@
+- let disqusjsPageTitle = page.title.replace(/'/ig,"\\'")
+
+script.
+  function loadDisqusjs () {
+    function initDisqusjs () {
+      window.disqusjs = null
+      disqusjs = new DisqusJS(Object.assign({
+        shortname: '!{theme.disqusjs.shortname}',
+        identifier: '!{ url_for(page.path) }',
+        url: '!{ page.permalink }',
+        title: '!{ disqusjsPageTitle }',
+        apikey: '!{theme.disqusjs.apikey}',
+      },!{JSON.stringify(theme.disqusjs.option)}))
+
+      disqusjs.render(document.getElementById('disqusjs'))
+    }
+
+    const themeChange = () => {
+      const ele = document.getElementById('disqus_thread')
+      if(!ele) return
+      disqusjs.destroy()
+      initDisqusjs()
+    }
+
+
+    btf.addModeChange('disqusjs', themeChange)
+
+    if (window.disqusJsLoad) initDisqusjs()
+    else {
+      getCSS('!{url_for(theme.asset.disqusjs_css)}')
+      getScript('!{url_for(theme.asset.disqusjs)}').then(initDisqusjs)
+      window.disqusJsLoad = true
+    }
+  }
+
+  if ('!{theme.comments.use[0]}' === 'Disqusjs' || !!{theme.comments.lazyload}) {
+    if (!{theme.comments.lazyload}) btf.loadComment(document.getElementById('disqusjs'), loadDisqusjs)
+    else loadDisqusjs()
+  }
+  else {
+    function loadOtherComment () {
+      loadDisqusjs()
+    }
+  }
+
+
+if is_post() && !theme.comments.lazyload && theme.comments.count && theme.comments.use[0] === 'Disqusjs'
+  script.
+    if (window.DISQUSWIDGETS === undefined) {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://!{theme.disqus.shortname}.disqus.com/count.js';
+      s.id = 'dsq-count-scr';
+      (d.head || d.body).appendChild(s);
+    } else {
+      DISQUSWIDGETS.getCount({reset: true});
+    }
+

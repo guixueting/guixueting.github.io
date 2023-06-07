@@ -1,0 +1,38 @@
+- const { serverURL, option, pageview } = theme.waline
+- const { lazyload, count, use } = theme.comments
+
+script.
+  function loadWaline () {
+    function initWaline () {
+      const waline = Waline.init(Object.assign({
+        el: '#waline-wrap',
+        serverURL: '!{serverURL}',
+        pageview: !{lazyload ? false : pageview},
+        dark: 'html[data-theme="dark"]',
+        path: window.location.pathname,
+        comment: !{lazyload ? false : count},
+      }, !{JSON.stringify(option)}))
+    }
+
+    const walineCSSLoad = document.getElementById('waline-css')
+
+    if (typeof Waline === 'object') {
+      walineCSSLoad ? initWaline() : getCSS('!{url_for(theme.asset.waline_css)}','waline-css').then(initWaline)
+    }
+    else {
+      getCSS('!{url_for(theme.asset.waline_css)}','waline-css').then(() => {
+        getScript('!{url_for(theme.asset.waline_js)}').then(initWaline)
+      })
+    }
+  }
+
+  if ('!{use[0]}' === 'Waline' || !!{lazyload}) {
+    if (!{lazyload}) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    function loadOtherComment () {
+      loadWaline()
+    }
+  }
+  
+
