@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>IntersectionObserver</title>
+      <link href="/2023/06/26/IntersectionObserver/"/>
+      <url>/2023/06/26/IntersectionObserver/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、IntersectionObserver介绍"><a href="#一、IntersectionObserver介绍" class="headerlink" title="一、IntersectionObserver介绍"></a>一、IntersectionObserver介绍</h1><ul><li><h2 id="1-1-起源"><a href="#1-1-起源" class="headerlink" title="1.1 起源"></a>1.1 起源</h2><p>在现代网页开发中，动态加载和按需展示内容已成为提升用户体验和网页性能的重要手段。传统的方法通常依赖于滚动事件或定时器来监测元素与视窗的交叉状态，但这些方法效率低下且容易导致性能问题。为了解决这个问题，<code>W3C</code> 于 2016 年引入了 <code>IntersectionObserver API</code>。</p><h2 id="1-2-IntersectionObserver-是什么？"><a href="#1-2-IntersectionObserver-是什么？" class="headerlink" title="1.2 IntersectionObserver 是什么？"></a>1.2 IntersectionObserver 是什么？</h2><p><code>IntersectionObserver</code>是一种浏览器提供的 <code>JavaScript API</code>，用于监测元素与视窗的交叉状态。它可以告诉开发者一个元素是否进入或离开视窗，以及两者的交叉区域的大小和位置。<br> 它提供了一种高效的方法来观察元素是否进入或离开视窗，而无需依赖滚动事件或定时器。它可以通过回调函数及设定的阈值来实时地通知开发者目标元素与视窗的交叉状态，并根据需要采取相应的操作。</p><h2 id="1-3-IntersectionObserver-的特性"><a href="#1-3-IntersectionObserver-的特性" class="headerlink" title="1.3 IntersectionObserver 的特性"></a>1.3 IntersectionObserver 的特性</h2><ul><li><strong>异步执行</strong>：<code>IntersectionObserver</code> 是异步执行的，它使用浏览器的内部优化机制，不会阻塞主线程，从而避免了性能问题。</li><li><strong>节省资源</strong>：相比于传统的滚动事件或定时器，<code>IntersectionObserver</code> 可以精确地观察元素与视窗的交叉状态，避免了不必要的计算和回调触发，从而节省了资源的消耗。</li><li><strong>多目标观察</strong>：<code>IntersectionObserver</code> 可以同时观察多个目标元素，通过回调函数逐个通知开发者它们的交叉状态，方便进行批量操作。</li><li><strong>自定义阈值</strong>：开发者可以设定一个或多个阈值，用来定义元素与视窗的交叉比例。当交叉比例超过或低于阈值时，会触发相应的回调函数。</li></ul><p>通过使用 <code>IntersectionObserver</code>，开发者可以实现一些常见的功能，如图片懒加载、无限滚动加载、广告展示控制等，以提升网页的性能和用户体验。</p><h2 id="1-4-IntersectionObserver的作用"><a href="#1-4-IntersectionObserver的作用" class="headerlink" title="1.4  IntersectionObserver的作用"></a>1.4  IntersectionObserver的作用</h2><ul><li>图片懒加载</li><li>无限滚动加载</li><li>广告展示控制</li><li>有效曝光埋点</li><li>用户兴趣埋点</li><li>可视区域内外动画&#x2F;视频暂停（腾讯视频列表效果）</li><li>视差效果与动画</li><li>标题和导航联动</li><li>虚拟列表优化</li><li>消息已读状态标记（各聊天软件）</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Blog图床选择</title>
+      <link href="/2023/06/01/%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/"/>
+      <url>/2023/06/01/%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、为什么要选择图床"><a href="#一、为什么要选择图床" class="headerlink" title="一、为什么要选择图床"></a>一、为什么要选择图床</h1><ol><li>当我们在本地写博客做笔记（用Typora或MarkText）时，我们一般会把图片存在当前文章的路径下</li><li>当我们在CSDN、掘金或知乎等平台上写博客时，我们的图片会被存储到这些网站对应的服务器中</li><li>而当我们的博客发布在Hexo上时，图片的加载路径有以下两种方式：<ol><li>参照我们本地写博客的方式，将图片存储到Hexo下的public资源文件夹下</li><li>参照在技术论坛写博客的方式，将图片存储到服务器上</li></ol></li></ol><p>如果将图片资源都存储到Hexo的文件中，会变得很臃肿，所以不采用该方案。</p><p>我们这里所要说的就是将图片存储到服务器上，即图床这种方式。</p><h1 id="二、方案-阿里云对象存储-Picgo"><a href="#二、方案-阿里云对象存储-Picgo" class="headerlink" title="二、方案: 阿里云对象存储 + Picgo"></a>二、方案: 阿里云对象存储 + Picgo</h1><ol><li>登录阿里云网站，进入工作台页面，搜索对象存储，进入该页面，然后点击bucket列表</li></ol><p><a href="https://oss.console.aliyun.com/overview">阿里云</a></p><img src="https://gxt-buckets.oss-cn-shanghai.aliyuncs.com/blog/20230607150932.png" style="zoom: 25%;" /><ol start="2"><li>进入页面，点击创建bucket.</li></ol><ul><li>Bucket名称和地域必填。地域选择一个距离自己近一些的地方。</li><li>读写权限选择为公共读，其余均默认</li></ul><img src="https://gxt-buckets.oss-cn-shanghai.aliyuncs.com/blog/20230607151339.png" style="zoom: 50%;" /><ol start="3"><li><p>点击网页右上角的头像，再点击AccessKey管理，进入该页面</p><img src="https://gxt-buckets.oss-cn-shanghai.aliyuncs.com/blog/image-20221015202601913.png" alt="image-20221015202601913" style="zoom:50%;" /></li><li><p>点击创建AccessKey，将创建号的key复制保存下来，之后在Picgo上需要用到</p></li><li><p>打开Picgo，点击图床设置，选择阿里云OSS，填写如下信息。</p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221015202826913.png" alt="image-20221015202826913" style="zoom: 50%;" /><ol start="6"><li><p>Picgo下载</p><p><a href="https://github.com/Molunerfinn/PicGo/releases">Picgo下载</a></p></li></ol></li></ol><h1 id="三、结合Typora使用"><a href="#三、结合Typora使用" class="headerlink" title="三、结合Typora使用"></a>三、结合Typora使用</h1><p>用Typora写笔记，只需要先截图，再粘贴到Markdown文档，即可直接跳过上传操作，Typora帮我们自动完成。</p><p>操作为：打开Typora的设置，点击图像，按照我给的图片进行设置</p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221015203547504.png" alt="image-20221015203547504" style="zoom:50%;" />]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
