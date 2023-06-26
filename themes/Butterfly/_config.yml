@@ -11,8 +11,8 @@ nav:
 menu:
    首页: / || fas fa-home
    时间轴: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
+#   标签: /tags/ || fas fa-tags
+#   分类: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
@@ -33,8 +33,8 @@ code_word_wrap: false # 代码换行，有横向滚动条
 # formal:
 #   icon: link || the description || color
 social:
-#   fab fa-github: https://github.com/ || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+   fab fa-github: https://github.com/guixueting || Github || '#24292e'
+   fas fa-envelope: mailto:1141198092@qq.com || Email || '#4a7dbe'
 
 # Image (圖片設置)
 # --------------------------------------
@@ -51,7 +51,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: transparent
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://gxt-buckets.oss-cn-shanghai.aliyuncs.com/blog/0010.jpg
@@ -61,7 +61,7 @@ archive_img:
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: false
 
 # The banner image of tag page
 # format:
@@ -156,7 +156,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -228,12 +228,12 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/
+      link: https://github.com/guixueting
   card_announcement:
-    enable: true
+    enable: false
     content: This is my Blog
   card_recent_post:
     enable: true
@@ -361,7 +361,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1
@@ -640,10 +640,11 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: url(https://gxt-buckets.oss-cn-shanghai.aliyuncs.com/blog/0010.jpg)
+# background:
 
 # Footer Background
-footer_bg: false
+footer_bg: transparent
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -665,7 +666,7 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -695,7 +696,7 @@ fireworks:
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
@@ -860,10 +861,11 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
   placeholder:
   blur: false
+  # loadingImg:
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -897,7 +899,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    # <link rel="stylesheet" href="../../source/css/transpancy.css">
   bottom:
     # - <script src="xxxx"></script>
 
